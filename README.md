@@ -66,13 +66,7 @@
 
 ## 오픈소스 프로젝트 분석 방법
 
-- STAN4J (http://stan4j.com)
-
-## 오픈소스 활용 예
-1. BeanIO
-
-2. Netty4.1
+- Structure Analysis for Java : STAN4J (http://stan4j.com)
 
 ## 참고자료
- - 지로관련 설계서 : http://e-giro.giro.or.kr
  - 오픈소스로 개발실력 쌓기 (http://www.slideshare.net/kthcorp/h3-2012-15042338)
