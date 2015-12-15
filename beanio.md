@@ -168,11 +168,48 @@ public class Trailer {
 }
 ```
 
-## 프로그램
+## 프로그램 (Main.java)
 
-### Main.java
+### Mapper 설정
+```java
+String fileName = "GR6533";
+StreamBuilder streamBuilder = new StreamBuilder(fileName)
+		.format("fixedlength")
+		.parser(new FixedLengthParserBuilder().recordTerminator(""))
+		.addRecord(Header.class)
+		.addRecord(Data.class)
+		.addRecord(Trailer.class);
+		
+StreamFactory factory = StreamFactory.newInstance();
+factory.define(streamBuilder);
+```
+
+### 데이터 읽는 부분
+ - 예제 프로그램에서는 Guava 라이브러리를 사용하여, 전체 데이터를 Collection으로 변환
+ - 실 업무에서는 파일크기가 클 수 있기 때문에 Stream 형태로 구현하거나 SpringBatch 프레임워크 사용해야 함.
 
 ```java
+// 레코드 길이
+int recordLen = 320;
+// 파일 데이터 내용
+String content ="GR65331190400035          ..."
+	  + "GR6533220000001               ..."
+	  + "GR653333                      ...";
+
+Iterable<String> result = Splitter.fixedLength(recordLen).split(content);
+```
+
+### 파싱 후 결과 출력
+```java
+Unmarshaller u = factory.createUnmarshaller(fileName);
+for (String record : result) {
+	System.out.println("원문 [" + record + "]");
+
+	Object o = u.unmarshal(record);
+			
+	// Parsing 결과
+	System.out.println(o);
+}
 ```
 
 ## 참고자료
