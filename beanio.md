@@ -172,8 +172,8 @@ public class Trailer {
 
 ### Mapper 설정
 ```java
-String fileName = "GR6533";
-StreamBuilder streamBuilder = new StreamBuilder(fileName)
+String streamName = "GR6533";
+StreamBuilder streamBuilder = new StreamBuilder(streamName)
 		.format("fixedlength")
 		.parser(new FixedLengthParserBuilder().recordTerminator(""))
 		.addRecord(Header.class)
@@ -201,7 +201,7 @@ Iterable<String> result = Splitter.fixedLength(recordLen).split(content);
 
 ### 파싱 후 결과 출력
 ```java
-Unmarshaller u = factory.createUnmarshaller(fileName);
+Unmarshaller u = factory.createUnmarshaller(streamName);
 for (String record : result) {
 	System.out.println("원문 [" + record + "]");
 
