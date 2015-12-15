@@ -46,7 +46,6 @@
 |    24      |    기타고지정보1(title)      |    ANHS    |    10        |                                                                                         |
 |            |    기타고지정보1(내용)       |    ANHS    |    30        |                                                                                         |
 |    25      |    Filler                    |    ANHS    |    19        |                                                                                         |
-
 ### Trailer Record
 
 |    항번    |    이   름             |    MODE    |    LENGTH    |    비     고                       |
@@ -58,6 +57,123 @@
 |    5       |    납기후 금액합계*    |    N       |    14        |    Data   Record의 금액 합계       |
 |    6       |    FILLER              |    AN      |    277       |                                    |
 
+
+## 파일 구조에 해당하는 Bean 생성
+
+### Header.java
+```java
+import org.beanio.annotation.Field;
+import org.beanio.annotation.Record;
+
+@Record
+public class Header {
+	@Field(length=6)
+	private String 업무구분;
+	@Field(length=2,rid=true,literal="11")
+	private String 데이터구분;
+	@Field(length=2)
+	private String 발행기관분류코드;
+	@Field(length=7)
+	private String 지로번호;
+	@Field(length=16)
+	private String 이용기관명;
+	@Field(length=8)
+	private String 전송일;
+	@Field(length=279)
+	private String FILLER;
+}	
+```
+
+### Data.java
+```java
+import org.beanio.annotation.Field;
+import org.beanio.annotation.Record;
+
+@Record
+public class Data {
+	@Field(length=6)
+	private String 업무구분;
+	@Field(length=2,rid=true,literal="22")
+	private String 데이터구분;
+	@Field(length=7)
+	private String 일련번호;
+	@Field(length=20)
+	private String 고객조회번호;
+	@Field(length=12)
+	private String 납기내금액;
+	@Field(length=12)
+	private String 납기후금액;
+	@Field(length=1)
+	private String 데이터형식구분;
+	@Field(length=8)
+	private String 납기일;		
+	@Field(length=8)
+	private String 고지마감일;	
+	@Field(length=7)
+	private String 지로번호;		
+	@Field(length=14)
+	private String 전자납부번호;	
+	@Field(length=30)
+	private String 고객관리번호;
+	@Field(length=1)
+	private String 고지발행형태;
+	@Field(length=2)
+	private String 기타구분코드;
+	@Field(length=16)
+	private String 납부자성명;
+	@Field(length=13)
+	private String Filler1;
+	@Field(length=6)
+	private String 납부년월회차;
+	@Field(length=80)
+	private String 고객주소;
+	@Field(length=2)
+	private String 처리결과코드;	
+	@Field(length=1)
+	private String 납부우선순위	;
+	@Field(length=8)
+	private String 체납기간;
+	@Field(length=3)
+	private String 체납개월수;	
+	@Field(length=2)
+	private String 기타고지정보건수;	
+	@Field(length=10)
+	private String 기타고지정보1제목;	
+	@Field(length=30)
+	private String 기타고지정보1내용;	
+	@Field(length=19)
+	private String Filler2;
+}	
+```
+
+### Trailer.java
+```java
+import org.beanio.annotation.Field;
+import org.beanio.annotation.Record;
+
+@Record
+public class Trailer {
+	@Field(length=6)
+	private String 업무구분;
+	@Field(length=2,rid=true,literal="33")
+	private String 데이터구분;
+	@Field(length=7)
+	private String 총건수;
+	@Field(length=14)
+	private String 납기내금액합계;
+	@Field(length=14)
+	private String 납기후금액합계;
+	@Field(length=277)
+	private String FILLER;
+}
+```
+
+## 프로그램
+
+### Main.java
+
+```java
+```
 
 ## 참고자료
  - beanIO : http://beanio.org
