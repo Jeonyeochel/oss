@@ -18,8 +18,6 @@
   - google 검색결과 / google trend
   - stackoverflow.com
   
-##
-
 ## 전자정부프레임워크
 
 | 서비스그룹                  | 서비스                              | 오픈소스소프트웨어                  | 실행환경 확장 및 자체 개발                          |
@@ -63,12 +61,18 @@
 
 - 출처 : 전자정부프레임워크 홈페이지 (http://www.egovframe.org/EgovEnvRun.jsp?menu=1&submenu=3&leftsub=1)
 
+## Java 공용라이브러리
+
 
 ## 오픈소스 프로젝트 분석 방법
 
+- STAN4J (http://stan4j.com)
 
 ## 오픈소스 활용 예
 1. BeanIO
 
 2. Netty4.1
 
+## 참고자료
+ - 지로관련 설계서 : http://e-giro.giro.or.kr
+ - 오픈소스로 개발실력 쌓기 (http://www.slideshare.net/kthcorp/h3-2012-15042338)
