@@ -27,7 +27,11 @@
   - Google 검색결과 / Google Trend
   - [StackOverflow](http://stackoverflow.com)
 
+
 ## Apache Commons
+
+- 출처 : http://commons.apache.org
+
 
 | Components                           | Description                                                                                                                                                                                                                           | Latest Version | Released   |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|------------|
@@ -73,9 +77,11 @@
 | VFS                                  | Virtual File System component for treating files, FTP, SMB, ZIP and such like as a single logical file system.                                                                                                                        | 2.0            | 2011-08-24 |
 | Weaver                               | Provides an easy way to enhance (weave) compiled bytecode.                                                                                                                                                                            | 1.1            | 2014-09-30 |
 
-- 출처 : http://commons.apache.org
+
 
 ## 전자정부프레임워크
+
+- 출처 : 전자정부프레임워크 홈페이지 (http://www.egovframe.org/EgovEnvRun.jsp?menu=1&submenu=3&leftsub=1)
 
 | 서비스그룹                  | 서비스                              | 오픈소스소프트웨어                  | 실행환경 확장 및 자체 개발                          |
 |-----------------------------|-------------------------------------|-------------------------------------|-----------------------------------------------------|
@@ -116,7 +122,6 @@
 | XML Manipulation            | Apache Xerces2, JDOM                | XML 처리 기능 확장                  |                                                     |
 | 모바일 화면처리             | 모바일 UX 컴포넌트                  | jQuery Mobile                       |                                                     |
 
-- 출처 : 전자정부프레임워크 홈페이지 (http://www.egovframe.org/EgovEnvRun.jsp?menu=1&submenu=3&leftsub=1)
 
 ## Java 공용라이브러리
 
