@@ -5,25 +5,27 @@
 1. Google 검색
 
 2. Open Source 커뮤니티
-  - Apache : http://www.apache.org
+  - [Apache](http://www.apache.org)
     ![Screenshot of http://code.facebook.com/projects](http://mimosa.snu.ac.kr/~poshi/oss/apache.org.project.png)
   
-  - Facebook 오픈소스 프로젝트 : https://code.facebook.com/projects, https://github.com/facebook
+  - [Facebook 오픈소스 프로젝트](https://code.facebook.com/projects) 
     ![Screenshot of http://code.facebook.com/projects](http://mimosa.snu.ac.kr/~poshi/oss/code.facebook.com.projects.png)
 
-  - Twitter 오픈소스 프로젝트 : https://engineering.twitter.com/opensource, https://github.com/twitter
+  - [Twitter 오픈소스 프로젝트](https://engineering.twitter.com/opensource) 
     ![Screenshot of http://code.facebook.com/projects](http://mimosa.snu.ac.kr/~poshi/oss/engineering.twitter.com.opensource.png)
 
-  - JBoss : http://www.jboss.org
+  - [JBoss](http://www.jboss.org "JBoss")
 
-  - Github : http://www.github.com
+  - [GitHub](http://www.github.com "GitHub")
+    - [Facebook GitHub](https://github.com/facebook)
+    - [Twitter GitHub](https://github.com/twitter)
 
-  - Google Code : https://code.google.com
+  - [Google Code](https://code.google.com)
 
 3. 오픈소스 선택
-  - 오픈소스 순위, 평점 확인 : http://www.findbestopensource.com
+  - 오픈소스 순위, 평점 확인 : <http://www.findbestopensource.com>
   - Google 검색결과 / Google Trend
-  - http://stackoverflow.com
+  - [StackOverflow](http://stackoverflow.com)
 
 ## Apache Commons
 
