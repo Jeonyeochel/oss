@@ -6,7 +6,8 @@
 
 2. Open Source 커뮤니티
   - Apache : http://www.apache.org
-  - Facebook 오픈소스 프로젝트 : https://github.com/facebook
+  - Facebook 오픈소스 프로젝트 : https://code.facebook.com/projects, https://github.com/facebook
+  ![Screenshot of Sample Markdown Page](https://dl.dropboxusercontent.com/u/4093971/gist.github.com/leafriend/cd306f742876579fe84f/Sample.png)
   - Twitter 오픈소스 프로젝트 : https://engineering.twitter.com/opensource, https://github.com/twitter
   - JBoss : http://www.jboss.org
   - Github : http://www.github.com
