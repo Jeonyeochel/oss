@@ -2,7 +2,7 @@
 # 파일처리
 
 ## 파일설계서
-- 출처 : eGiro (http://e-giro.giro.or.kr) - [자료실] - [지로 안내자료] - [전자수납서비스 이용안내]
+- 출처 : (출처확인필요) eGiro (http://e-giro.giro.or.kr) - [자료실] - [지로 안내자료] - [전자수납서비스 이용안내]
 
 ### Header Record (320 Bytes)
 
