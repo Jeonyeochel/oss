@@ -5,19 +5,66 @@
 1. Google 검색
 
 2. Open Source 커뮤니티
-  - Apache
-  - JBoss
-  - Facebook
-  - Twitter
-  - Github
-  - Google Code
-  - BitBucket
+  - Apache : http://www.apache.org
+  - Facebook 오픈소스 프로젝트 : https://github.com/facebook
+  - Twitter 오픈소스 프로젝트 : https://engineering.twitter.com/opensource, https://github.com/twitter
+  - JBoss : http://www.jboss.org
+  - Github : http://www.github.com
+  - Google Code : https://code.google.com
 
-3. 
-  - findbestopensource.com
-  - google 검색결과 / google trend
-  - stackoverflow.com
-  
+3. 오픈소스 선택
+  - 오픈소스 순위, 평점 확인 : http://www.findbestopensource.com
+  - Google 검색결과 / Google Trend
+  - http://stackoverflow.com
+
+## Apache Commons
+
+| Components                           | Description                                                                                                                                                                                                                           | Latest Version | Released   |
+|--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|------------|
+| BCEL                                 | Byte Code Engineering Library - analyze, create, and manipulate Java class files                                                                                                                                                      | 5.2            | 2006-06-07 |
+| BeanUtils                            | Easy-to-use wrappers around the Java reflection and introspection APIs.                                                                                                                                                               | 1.9.2          | 2014-05-29 |
+| BSF                                  | Bean Scripting Framework - interface to scripting languages, including JSR-223                                                                                                                                                        | 3.1            | 2010-24-06 |
+| Chain                                | Chain of Responsibility pattern implemention.                                                                                                                                                                                         | 1.2            | 2008-06-02 |
+| CLI                                  | Command Line arguments parser.                                                                                                                                                                                                        | 1.3.1          | 2015-06-17 |
+| Codec                                | General encoding/decoding algorithms (for example phonetic, base64, URL).                                                                                                                                                             | 1.10           | 2014-11-09 |
+| Collections                          | Extends or augments the Java Collections Framework.                                                                                                                                                                                   | 4.1            | 2015-11-27 |
+| Compress                             | Defines an API for working with tar, zip and bzip2 files.                                                                                                                                                                             | 1.10           | 2015-08-18 |
+| Configuration                        | Reading of configuration/preferences files in various formats.                                                                                                                                                                        | 2.0-beta2      | 2015-12-05 |
+| CSV                                  | Component for reading and writing comma separated value files.                                                                                                                                                                        | 1.2            | 2015-08-24 |
+| Daemon                               | Alternative invocation mechanism for unix-daemon-like java code.                                                                                                                                                                      | 1.0.15         | 2013-04-03 |
+| DBCP                                 | Database connection pooling services.                                                                                                                                                                                                 | 2.1.1          | 2015-08-06 |
+| DbUtils                              | JDBC helper library.                                                                                                                                                                                                                  | 1.6            | 2014-07-20 |
+| Digester                             | XML-to-Java-object mapping utility.                                                                                                                                                                                                   | 3.2            | 2011-12-13 |
+| Discovery                            | Tools for locating resources by mapping service/reference names to resource names.                                                                                                                                                    | 0.5            | 2011-05-05 |
+| EL                                   | Interpreter for the Expression Language defined by the JSP 2.0 specification.                                                                                                                                                         | 1.0            | 2003-06-18 |
+| Email                                | Library for sending e-mail from Java.                                                                                                                                                                                                 | 1.4            | 2015-05-23 |
+| Exec                                 | API for dealing with external process execution and environment management in Java.                                                                                                                                                   | 1.3            | 2014-11-06 |
+| FileUpload                           | File upload capability for your servlets and web applications.                                                                                                                                                                        | 1.3.1          | 2014-02-07 |
+| Functor                              | A functor is a function that can be manipulated as an object, or an object representing a single, generic function.                                                                                                                   | N/A            | N/A        |
+| Imaging (previously called Sanselan) | A pure-Java image library.                                                                                                                                                                                                            | 0.97-incubator | 2009-02-20 |
+| IO                                   | Collection of I/O utilities.                                                                                                                                                                                                          | 2.1            | 2011-09-28 |
+| JCI                                  | Java Compiler Interface                                                                                                                                                                                                               | 1.1            | 2013-10-14 |
+| JCS                                  | Java Caching System                                                                                                                                                                                                                   | 1.3            | 2007-06-11 |
+| Jelly                                | XML based scripting and processing engine.                                                                                                                                                                                            | 1.0            | 2005-06-16 |
+| Jexl                                 | Expression language which extends the Expression Language of the JSTL.                                                                                                                                                                | 2.1.1          | 2011-12-24 |
+| JXPath                               | Utilities for manipulating Java Beans using the XPath syntax.                                                                                                                                                                         | 1.3            | 2008-08-14 |
+| Lang                                 | Provides extra functionality for classes in java.lang.                                                                                                                                                                                | 3.4            | 2015-04-06 |
+| Launcher                             | Cross platform Java application launcher.                                                                                                                                                                                             | 1.1            | 2004-08-22 |
+| Logging                              | Wrapper around a variety of logging API implementations.                                                                                                                                                                              | 1.2            | 2014-07-11 |
+| Math                                 | Lightweight, self-contained mathematics and statistics components.                                                                                                                                                                    | 3.5            | 2015-04-17 |
+| Modeler                              | Mechanisms to create Model MBeans compatible with JMX specification.                                                                                                                                                                  | 2.0.1          | 2007-06-25 |
+| Net                                  | Collection of network utilities and protocol implementations.                                                                                                                                                                         | 3.4            | 2015-11-26 |
+| OGNL                                 | An Object-Graph Navigation Language                                                                                                                                                                                                   | 4.0            | 2013-??-?? |
+| Pool                                 | Generic object pooling component.                                                                                                                                                                                                     | 2.4.2          | 2015-08-01 |
+| Primitives                           | Smaller, faster and easier to work with types supporting Java primitive types.                                                                                                                                                        | 1.0            | 2003-11-05 |
+| Proxy                                | Library for creating dynamic proxies.                                                                                                                                                                                                 | 1.0            | 2008-02-28 |
+| SCXML                                | An implementation of the State Chart XML specification aimed at creating and maintaining a Java SCXML engine.It is capable of executing a state machine defined using a SCXML document, and abstracts out the environment interfaces. | 0.9            | 2008-12-01 |
+| Validator                            | Framework to define validators and validation rules in an xml file.                                                                                                                                                                   | 1.5.0          | 2015-11-24 |
+| VFS                                  | Virtual File System component for treating files, FTP, SMB, ZIP and such like as a single logical file system.                                                                                                                        | 2.0            | 2011-08-24 |
+| Weaver                               | Provides an easy way to enhance (weave) compiled bytecode.                                                                                                                                                                            | 1.1            | 2014-09-30 |
+
+- 출처 : http://commons.apache.org
+
 ## 전자정부프레임워크
 
 | 서비스그룹                  | 서비스                              | 오픈소스소프트웨어                  | 실행환경 확장 및 자체 개발                          |
