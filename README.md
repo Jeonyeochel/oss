@@ -1,10 +1,12 @@
-# oss
+# 오픈소스 활용 방법
 
 ## 오픈소스 찾기
 
 1. Google 검색
 
+
 2. Open Source 커뮤니티
+
   - [Apache](http://www.apache.org)
     ![Screenshot of http://code.facebook.com/projects](http://mimosa.snu.ac.kr/~poshi/oss/apache.org.project.png)
   
@@ -14,17 +16,21 @@
   - [Twitter 오픈소스 프로젝트](https://engineering.twitter.com/opensource) 
     ![Screenshot of http://code.facebook.com/projects](http://mimosa.snu.ac.kr/~poshi/oss/engineering.twitter.com.opensource.png)
 
-  - [JBoss](http://www.jboss.org "JBoss")
-
   - [GitHub](http://www.github.com "GitHub")
     - [Facebook GitHub](https://github.com/facebook)
     - [Twitter GitHub](https://github.com/twitter)
 
   - [Google Code](https://code.google.com)
 
+  - [JBoss](http://www.jboss.org "JBoss")
+
+
 3. 오픈소스 선택
+
   - 오픈소스 순위, 평점 확인 : <http://www.findbestopensource.com>
+
   - Google 검색결과 / Google Trend
+
   - [StackOverflow](http://stackoverflow.com)
 
 
@@ -124,6 +130,8 @@
 
 
 ## Java 공용라이브러리
+
+- (비공개) [기능 명세](https://docs.google.com/document/d/1G6EYpS7C4GGV3Oyxbg5JpMvTg0WFAO-Ip6SdOuZgmhQ/edit)
 
 
 ## 오픈소스 프로젝트 분석 방법
