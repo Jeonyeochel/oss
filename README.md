@@ -6,11 +6,18 @@
 
 2. Open Source 커뮤니티
   - Apache : http://www.apache.org
+    ![Screenshot of http://code.facebook.com/projects](http://mimosa.snu.ac.kr/~poshi/oss/apache.org.project.png)
+  
   - Facebook 오픈소스 프로젝트 : https://code.facebook.com/projects, https://github.com/facebook
-  ![Screenshot of Sample Markdown Page](https://dl.dropboxusercontent.com/u/4093971/gist.github.com/leafriend/cd306f742876579fe84f/Sample.png)
+    ![Screenshot of http://code.facebook.com/projects](http://mimosa.snu.ac.kr/~poshi/oss/code.facebook.com.projects.png)
+
   - Twitter 오픈소스 프로젝트 : https://engineering.twitter.com/opensource, https://github.com/twitter
+    ![Screenshot of http://code.facebook.com/projects](http://mimosa.snu.ac.kr/~poshi/oss/engineering.twitter.com.opensource.png)
+
   - JBoss : http://www.jboss.org
+
   - Github : http://www.github.com
+
   - Google Code : https://code.google.com
 
 3. 오픈소스 선택
@@ -115,6 +122,7 @@
 ## 오픈소스 프로젝트 분석 방법
 
 - Structure Analysis for Java : STAN4J (http://stan4j.com)
+![Screenshot of http://code.facebook.com/projects](http://mimosa.snu.ac.kr/~poshi/oss/stan_netty_bootstrap.png)
 
 ## 참고자료
  - 오픈소스로 개발실력 쌓기 (http://www.slideshare.net/kthcorp/h3-2012-15042338)
