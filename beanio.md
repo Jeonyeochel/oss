@@ -2,7 +2,7 @@
 # BeanIO를 활용하여 고정길이 문자열 파싱
 
 ## 파일설계서
-- 출처 :  [CMS](http://www.cmsedi.or.kr) - [자료실] - [업무자료]
+- 출처 :  [CMS](http://www.cmsedi.or.kr) - [자료실] - [업무자료] - "CMS 전산설계서"
 
 ### Header Record (150 Bytes)
 
@@ -24,7 +24,7 @@
 | 1    | Record 구분                         | A    | 1      | Data Record 식별부호 “R"             |
 | 2    | Data 일련번호                       | N    | 8      | "00000001" ～                        |
 | 3    | 기관코드                            | AN   | 10     | 이용기관식별코드                     |
-| 4    | 입금참가기관(은행)점코드            | AN   | 7      | •참가기관(은행) 코드                 |
+| 4    | 은행 점코드                         | AN   | 7      | •참가기관(은행) 코드                 |
 | 5    | 입금계좌번호                        | AN   | 16     |                                      |
 | 6    | 입금액                              | N    | 13     |                                      |
 | 7    | 생년월일(사업자등록번호)            | AN   | 13     |                                      |
@@ -61,19 +61,21 @@ import org.beanio.annotation.Record;
 
 @Record
 public class Header {
-	@Field(length=6)
-	private String 업무구분;
-	@Field(length=2,rid=true,literal="11")
-	private String 데이터구분;
-	@Field(length=2)
-	private String 발행기관분류코드;
-	@Field(length=7)
-	private String 지로번호;
-	@Field(length=16)
-	private String 이용기관명;
+	@Field(length=1, rid=true, literal="H")
+	private String Record구분;
 	@Field(length=8)
-	private String 전송일;
-	@Field(length=279)
+	private String 일련번호;
+	@Field(length=10)
+	private String 기관코드;
+	@Field(length=8)
+	private String FILE이름;
+	@Field(length=6)
+	private String 입금일자;
+	@Field(length=7)
+	private String 은행점코드;
+	@Field(length=16)
+	private String 출금계좌번호;
+	@Field(length=94)
 	private String FILLER;
 }	
 ```
@@ -85,58 +87,34 @@ import org.beanio.annotation.Record;
 
 @Record
 public class Data {
-	@Field(length=6)
-	private String 업무구분;
-	@Field(length=2,rid=true,literal="22")
-	private String 데이터구분;
-	@Field(length=7)
-	private String 일련번호;
-	@Field(length=20)
-	private String 고객조회번호;
-	@Field(length=12)
-	private String 납기내금액;
-	@Field(length=12)
-	private String 납기후금액;
-	@Field(length=1)
-	private String 데이터형식구분;
+	@Field(length=1, rid=true, literal="R")
+	private String Record구분;
 	@Field(length=8)
-	private String 납기일;		
-	@Field(length=8)
-	private String 고지마감일;	
-	@Field(length=7)
-	private String 지로번호;		
-	@Field(length=14)
-	private String 전자납부번호;	
-	@Field(length=30)
-	private String 고객관리번호;
-	@Field(length=1)
-	private String 고지발행형태;
-	@Field(length=2)
-	private String 기타구분코드;
-	@Field(length=16)
-	private String 납부자성명;
-	@Field(length=13)
-	private String Filler1;
-	@Field(length=6)
-	private String 납부년월회차;
-	@Field(length=80)
-	private String 고객주소;
-	@Field(length=2)
-	private String 처리결과코드;	
-	@Field(length=1)
-	private String 납부우선순위	;
-	@Field(length=8)
-	private String 체납기간;
-	@Field(length=3)
-	private String 체납개월수;	
-	@Field(length=2)
-	private String 기타고지정보건수;	
+	private String Data일련번호;
 	@Field(length=10)
-	private String 기타고지정보1제목;	
-	@Field(length=30)
-	private String 기타고지정보1내용;	
-	@Field(length=19)
-	private String Filler2;
+	private String 기관코드;
+	@Field(length=7)
+	private String 은행점코드;
+	@Field(length=16)
+	private String 입금계좌번호;
+	@Field(length=13)
+	private String 입금액;
+	@Field(length=13)
+	private String 생년월일;
+	@Field(length=1)
+	private String 입금여부;
+	@Field(length=4)
+	private String 불능코드;
+	@Field(length=16)
+	private String 통장기재내용;
+	@Field(length=2)
+	private String 자금종류;
+	@Field(length=25)
+	private String 이용기관사용영역;
+	@Field(length=1)
+	private String Check여부;
+	@Field(length=33)
+	private String FILLER;
 }	
 ```
 
@@ -147,18 +125,24 @@ import org.beanio.annotation.Record;
 
 @Record
 public class Trailer {
-	@Field(length=6)
-	private String 업무구분;
-	@Field(length=2,rid=true,literal="33")
-	private String 데이터구분;
-	@Field(length=7)
-	private String 총건수;
-	@Field(length=14)
-	private String 납기내금액합계;
-	@Field(length=14)
-	private String 납기후금액합계;
-	@Field(length=277)
+	@Field(length=1, rid=true, literal="T")
+	private String Record구분;
+	@Field(length=8)
+	private String 일련번호;
+	@Field(length=10)
+	private String 기관코드;
+	@Field(length=8)
+	private String FILE이름;
+	@Field(length=8)
+	private String 총DataRecord수;
+	@Field(length=8)
+	private String 건수;
+	@Field(length=13)
+	private String 금액;
+	@Field(length=84)
 	private String FILLER;
+	@Field(length=10)
+	private String MAC검증값;
 }
 ```
 
