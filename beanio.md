@@ -24,7 +24,7 @@
 | 1    | Record 구분                         | A    | 1      | Data Record 식별부호 “R"             |
 | 2    | Data 일련번호                       | N    | 8      | "00000001" ～                        |
 | 3    | 기관코드                            | AN   | 10     | 이용기관식별코드                     |
-| 4    | 은행 점코드                         | AN   | 7      | •참가기관(은행) 코드                 |
+| 4    | 은행 점코드                         | AN   | 7      | 참가기관(은행) 코드                  |
 | 5    | 입금계좌번호                        | AN   | 16     |                                      |
 | 6    | 입금액                              | N    | 13     |                                      |
 | 7    | 생년월일(사업자등록번호)            | AN   | 13     |                                      |
@@ -150,7 +150,7 @@ public class Trailer {
 
 ### Mapper 설정
 ```java
-String streamName = "GR6533";
+String streamName = "EB31";
 StreamBuilder streamBuilder = new StreamBuilder(streamName)
 		.format("fixedlength")
 		.parser(new FixedLengthParserBuilder().recordTerminator(""))
@@ -168,11 +168,17 @@ factory.define(streamBuilder);
 
 ```java
 // 레코드 길이
-int recordLen = 320;
+int recordLen = 150;
 // 파일 데이터 내용
-String content ="GR65331190400035          ..."
-	  + "GR6533220000001               ..."
-	  + "GR653333                      ...";
+String content =  "H000000009912345678EB310725110725004655465501053333                                                                                                   " 
+				+ "R0000000019912345678088000079620201030154  0000000010000340507           KFTC       　　　999020043                  Y                                   " 
+				+ "R000000029912345678004000097004193006      0000000020000770204           KFTC       　　　999819956                  Y                                   " 
+				+ "R000000039912345678005000088502153090      0000000010000750111           KFTC       　　　997713566                  Y                                   " 
+				+ "R000000049912345678006000066702072127      0000000030000620711           KFTC       　　　999312584                  Y                                   " 
+				+ "R00000005991234567820907000061602158480    0000000010000760713           KFTC       　　　998420343                  Y                                   " 
+				+ "R000000069912345678011000045622097004      0000000030000581215           KFTC       　　　998920034                  Y                                   " 
+				+ "T99999999912345678EB31071000000006000000060000000090000                  1234567890                                                                   ";
+
 
 Iterable<String> result = Splitter.fixedLength(recordLen).split(content);
 ```
