@@ -36,6 +36,10 @@
 - Crawl 예제   
 
    - 대상 설정
+       ```sh
+       $ mkdir urls
+       $ echo http://nutch.apache.org > urls/seed.txt
+       ```
 
    - 실행
       ```sh
@@ -63,4 +67,24 @@
        Deduplication finished at 2015-12-30 15:22:15, elapsed: 00:00:05
        Skipping indexing ...
        Wed Dec 30 15:22:15 KST 2015 : Finished loop with 3 iterations
+      ```
+
+   - 정보확인
+      ```sh
+      $ bin/nutch readdb crawl/crawldb/ -stats
+      CrawlDb statistics start: crawl/crawldb/
+      Statistics for CrawlDb: crawl/crawldb/
+      TOTAL urls:     12067
+      retry 0:        12060
+      retry 1:        7
+      min score:      0.0
+      avg score:      1.961548E-4
+      max score:      1.131
+      status 1 (db_unfetched):        10891
+      status 2 (db_fetched):  768
+      status 3 (db_gone):     103
+      status 4 (db_redir_temp):       57
+      status 5 (db_redir_perm):       156
+      status 7 (db_duplicate):        92
+      CrawlDb statistics: done
       ```
