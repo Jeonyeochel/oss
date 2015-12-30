@@ -38,7 +38,29 @@
    - 대상 설정
 
    - 실행
-    ```sh
-     $ bin/crawl urls crawl 3
-     
-    ```
+      ```sh
+       $ bin/crawl urls crawl 3
+       Injecting seed URLs
+       /csehome/poshi/apache-nutch-1.11/bin/nutch inject crawl/crawldb urls
+       Injector: starting at 2015-12-30 15:11:28
+       Injector: crawlDb: crawl/crawldb
+       Injector: urlDir: urls
+       Injector: Converting injected urls to crawl db entries.
+       Injector: Total number of urls rejected by filters: 0
+       Injector: Total number of urls after normalization: 1
+       Injector: Merging injected urls into crawl db.
+       Injector: overwrite: false
+       Injector: update: false
+       Injector: URLs merged: 1
+       Injector: Total new urls injected: 0
+       Injector: finished at 2015-12-30 15:11:32, elapsed: 00:00:03
+       Wed Dec 30 15:11:32 KST 2015 : Iteration 1 of 3
+       Generating a new segment
+       ...
+       DeduplicationJob: starting at 2015-12-30 15:22:09
+       Deduplication: 90 documents marked as duplicates
+       Deduplication: Updating status of duplicate urls into crawl db.
+       Deduplication finished at 2015-12-30 15:22:15, elapsed: 00:00:05
+       Skipping indexing ...
+       Wed Dec 30 15:22:15 KST 2015 : Finished loop with 3 iterations
+      ```
